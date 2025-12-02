@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <a href="index.html" class="back-btn">⟵ Home</a>
     <div class="butterflies">
         <img src="mariposa.gif" class="butterfly"/>
         <img src="borboletas-butterfly.gif" class="butterfly" />
@@ -67,10 +68,29 @@
         z-index: 1000;
     }
 
+    .grid{
+      padding-top: 100px;
+    }
     @keyframes float {
         0% { transform: translateY(0px); }
         50% { transform: translateY(-12px); }
         100% { transform: translateY(0px); }
+    }
+    .back-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+    .back-btn:hover {
+        background: rgba(255, 255, 255, 1);
     }
      </style>
     <div class="grid">
@@ -121,9 +141,12 @@
       <div class="polaroid" style="left: 1000px; top: 600px;">
        <img src="588612323_848579188066055_426292867870962984_n (1).jpg" alt="">
       </div>
+      
     </div>  
+  
   </div>
   
-
-  
 </body>
+</html>
+
+
