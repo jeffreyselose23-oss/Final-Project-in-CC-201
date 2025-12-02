@@ -1,0 +1,314 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff9ecd 10%, #89c9ff 100%);
+    color: #fff;
+    align-items: baseline;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.butterflies {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  
+}
+
+.butterfly {
+    position: absolute;
+    width: 80px;
+    opacity: 10;
+    animation: fly 12s linear infinite;
+}
+
+.butterfly:nth-child(1) {
+    left: 3%;
+    bottom: -150px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.butterfly:nth-child(2) {
+    left: 10%;
+    bottom: -150px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+.butterfly:nth-child(3) {
+    left: 20%;
+    bottom: -150px;
+    animation-delay: 3s;
+    animation-duration: 11s;
+}
+
+.butterfly:nth-child(4) {
+    left: 30%;
+    bottom: -150px;
+    animation-delay: 3s;
+    animation-duration: 12s;
+}
+
+.butterfly:nth-child(5) {
+    left: 65%;
+    bottom: -150px;
+    animation-delay: 5s;
+    animation-duration: 13s;
+}
+
+.butterfly:nth-child(6) {
+    left: 75%;
+    bottom: -150px;
+    animation-delay: 4s;
+    animation-duration: 12s;
+}
+
+.butterfly:nth-child(7) {
+    left: 85%;
+    bottom: -150px;
+    animation-delay: 3s;
+    animation-duration: 11s;
+}
+
+.butterfly:nth-child(8) {
+    left: 90%;
+    bottom: -150px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    15% {
+        transform: translateY(-20vh) translateX(30px) rotate(15deg);
+    }
+    25% {
+        transform: translateY(-30vh) translateX(20px) rotate(10deg);
+    }
+    35% {
+        transform: translateY(-40vh) translateX(18px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(-50vh) translateX(15px) rotate(-5deg);
+    }
+    75% {
+        transform: translateY(-80vh) translateX(-5px) rotate(-10deg);
+    }
+    90% {
+        transform: translateY(-100vh) translateX(-10px) rotate(-15deg);
+    }
+    100% {
+        transform: translateY(-120vh) translateX(-30px) rotate(0deg);
+    }
+}
+
+.titlepage {
+    background-image: url(butterfly-star.gif);
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.header1 {
+    padding-top: 150px;
+    background-image:url(589908854_1613497443167332_2922002836540439101_n.png) ;
+    opacity: 150%;
+    backdrop-filter: blur(2px);
+}
+
+.profile {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+h1 {
+    font-size: 90px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: white;
+}
+
+.glow {
+  color: #fff;
+  text-shadow: 
+    0 0 10px #fff,
+    0 0 20px #89c9ff,
+    0 0 40px #89c9ff,
+    0 0 80px #ff9ecd,
+    0 0 120px #ff9ecd;
+  -webkit-text-stroke: 2px gray; 
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    margin-top: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 50px;
+    width: 280px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    margin-top: 70px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+}
+
+.card {
+  display: inline-flex; 
+  flex-direction: column;               
+  align-items: center;         
+  justify-content: center;  
+  text-align: center;    
+  gap: 1px;                    
+  color: blue;                
+  text-decoration: underline;
+  font-size: 18px;
+  font-family: cursive;
+  transition: 0.3s ease;
+}
+.card:hover {
+  color: purple;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+.card img {
+  width: 30px;                 
+  height: 30px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
+
+#aboutpage:hover {
+  background-color: royalblue;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    padding: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+h3 {
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.gallery-desc {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.polaroid-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.polaroid {
+    width: 180px;
+    background: white;
+    padding: 10px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: "Courier New", monospace;
+    transition: transform 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.rotate-left { transform: rotate(-8deg); }
+.rotate-right { transform: rotate(8deg); }
+
+.polaroid:hover {
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* space between boxes */
+  padding-top: 40;
+}
+
