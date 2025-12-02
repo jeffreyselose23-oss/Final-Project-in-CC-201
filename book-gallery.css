@@ -172,3 +172,57 @@ body {
 .page:hover {
     transform: rotateY(180deg);
 }
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablets – 768px and below */
+@media (max-width: 768px) {
+    .book-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 15px;
+    }
+
+    .page {
+        width: 160px;
+        height: 120px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+}
+
+/* Phones – 480px and below */
+@media (max-width: 480px) {
+    .book-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 12px;
+    }
+
+    .page {
+        width: 140px;
+        height: 110px;
+    }
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+}
+
+/* Very small phones – 360px and below */
+@media (max-width: 360px) {
+    .book-gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+
+    .page {
+        width: 90%;
+        height: 200px;
+    }
+}

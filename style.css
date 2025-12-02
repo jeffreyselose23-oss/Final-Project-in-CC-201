@@ -312,3 +312,178 @@ h3 {
   padding-top: 40;
 }
 
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablets – 1024px and below */
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 240px;
+        margin-top: 40px;
+        padding: 35px;
+    }
+
+    .polaroid {
+        width: 160px;
+    }
+
+    .polaroid img {
+        height: 160px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets – Medium (768px and below) */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .titlepage {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .header1 {
+        padding-top: 100px;
+    }
+
+    .content {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 200px;
+        padding: 30px;
+    }
+
+    .polaroid-wrapper {
+        gap: 25px;
+    }
+
+    .polaroid {
+        width: 150px;
+    }
+
+    .polaroid img {
+        height: 150px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .butterfly {
+        width: 60px;
+    }
+}
+
+/* Phones – 480px and below */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .titlepage {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .profile {
+        width: 120px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .polaroid-wrapper {
+        gap: 20px;
+    }
+
+    .polaroid {
+        width: 130px;
+    }
+
+    .polaroid img {
+        height: 130px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .butterfly {
+        width: 45px;
+    }
+}
+
+/* Very Small Phones – 360px and below */
+@media (max-width: 360px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .polaroid {
+        width: 110px;
+    }
+
+    .polaroid img {
+        height: 110px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .butterfly {
+        width: 40px;
+    }
+}
