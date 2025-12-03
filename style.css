@@ -340,7 +340,7 @@ h3 {
 
 /* Tablets – 1024px and below */
 /* Media queries for responsiveness */
-        @media (max-width: 768px) {
+        @media (max-width: 500px) {
             h1 {
                 font-size: 40px;
                 margin-top: 20px;
@@ -373,14 +373,14 @@ h3 {
             }
 
             .polaroid {
-                width: 100px;
+                width: 80px;
             }
 
             .polaroid img {
-                height: 100px;
+                height: 90px;
             }
         }
-@media (max-width: 1024px) {
+@media (max-width: 700px) {
 
     h1 {
         font-size: 70px;
@@ -410,7 +410,7 @@ h3 {
 }
 
 /* Tablets – Medium (768px and below) */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
     body {
         padding: 0 10px;
